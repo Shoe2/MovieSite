@@ -13,7 +13,7 @@ namespace MovieSite
         {
             public string Title { get; set; }
             public Genre MainGenre { get; set; }
-            public SubGenre SubGenre { get; set; }
+            public List<SubGenre> SubGenre { get; set; }
             public string DirectorName { get; set; }
             public DateTime DateReleased { get; set; }
             public int Length { get; set; }
