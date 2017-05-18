@@ -5,6 +5,30 @@ VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieSite", "MovieSite\MovieSite.csproj", "{48C6927B-F222-4930-AE68-7DE90A0007EF}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebFrontEnd", "WebFrontEnd\", "{0BE42B70-A924-4231-B155-A0D8428D8A00}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57497"
+		Debug.AspNetCompiler.PhysicalPath = "WebFrontEnd\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57497\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57497"
+		Release.AspNetCompiler.PhysicalPath = "WebFrontEnd\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57497\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57497"
+		SlnRelativePath = "WebFrontEnd\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPIService", "WebAPIService\WebAPIService.csproj", "{A84532EF-13EC-4046-B7C0-54A544EFBCEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +39,14 @@ Global
 		{48C6927B-F222-4930-AE68-7DE90A0007EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48C6927B-F222-4930-AE68-7DE90A0007EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48C6927B-F222-4930-AE68-7DE90A0007EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BE42B70-A924-4231-B155-A0D8428D8A00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BE42B70-A924-4231-B155-A0D8428D8A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BE42B70-A924-4231-B155-A0D8428D8A00}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BE42B70-A924-4231-B155-A0D8428D8A00}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{A84532EF-13EC-4046-B7C0-54A544EFBCEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A84532EF-13EC-4046-B7C0-54A544EFBCEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A84532EF-13EC-4046-B7C0-54A544EFBCEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A84532EF-13EC-4046-B7C0-54A544EFBCEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

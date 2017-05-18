@@ -1,0 +1,10 @@
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\bin\Debug\ClassLibrary1.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\bin\Debug\ClassLibrary1.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\obj\Debug\MovieSite.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\obj\Debug\ClassLibrary1.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\obj\Debug\ClassLibrary1.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\bin\Debug\ClassLibrary1.dll.config
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\bin\Debug\EntityFramework.SqlServer.xml
