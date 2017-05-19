@@ -19,7 +19,9 @@ namespace MovieSite
             JObject jObject = JObject.Parse(json);
             JToken jMovie = jObject["Movie"];
             Title = (string)jMovie["Title"];
-            MainGenre = Enum.Parse(Genre, jMovie["Genre"]);
+
+            string genreString = (string)jMovie["Genre"];
+            MainGenre = (Genre) Enum.Parse(typeof(Genre), genreString);
 
             //Subgenre list
             //foreach jMovie["SubGenre"]
