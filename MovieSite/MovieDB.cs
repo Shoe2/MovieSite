@@ -6,22 +6,12 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using static MovieSite.GenreDefinitions;
 using System.Runtime.Remoting.Contexts;
-using System.Xml.Serialization;
 
 namespace MovieSite
 {
 
     public class Movie
     {
-        public Movie(string json)
-        {
-            JObject jObject = JObject.Parse(json);
-            JToken jUser = jObject["user"];
-            name = (string)jUser["name"];
-            teamname = (string)jUser["teamname"];
-            email = (string)jUser["email"];
-            players = jUser["players"].ToArray();
-        }
         public string Title { get; set; }
         public Genre MainGenre { get; set; }
         public List<SubGenre> SubGenre { get; set; }
@@ -48,11 +38,19 @@ namespace MovieSite
     class AccessDB
     {
 
-        public static void AddToDB(string data)
+        public static void AddToDB ()
         {
+            Movie newMovie = new Movie();
+            newMovie.Title = "test";
+            newMovie.MainGenre = Genre.Horror;
+            newMovie.SubGenre.Add(SubGenre.ChickFlick);
+            newMovie.DateReleased = DateTime.Now;
+            newMovie.Length = 66;
+            newMovie.Description = "FUUUUUUU";
+                        
             using (var db = new MovieContext())
             {
-                db.Movies.Add();
+                db.Movies.Add(newMovie);
 
                 
                 db.Directors.Add(newMovie.Director);
