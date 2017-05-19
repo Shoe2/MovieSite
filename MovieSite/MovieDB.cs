@@ -20,8 +20,19 @@ namespace MovieSite
             JToken jMovie = jObject["Movie"];
             Title = (string)jMovie["Title"];
             MainGenre = Enum.Parse(Genre, jMovie["Genre"]);
-            //SubGenre = ;
-            //Director = jUser["players"].ToArray();
+
+            //Subgenre list
+            //foreach jMovie["SubGenre"]
+
+
+            SubGenre = subgenreList
+
+            //Director takes multiple lines to turn a string into a database entry 
+            //TODO: Account for same director on multiple movies
+            var directorString = (string)jMovie["Director"];
+            Director.DirectorFirstName = directorString.Split(' ')[0];
+            Director.DirectorLastName = directorString.Split(' ')[1];
+
             DateReleased = (DateTime)jMovie["DateReleased"];
             Length = (int)jMovie["Length"];
             Description = (string)jMovie["Description"];
@@ -55,13 +66,11 @@ namespace MovieSite
 
         public static void AddToDB(string data)
         {
-            Movie.Movie(data);
+            Movie newMovie = new Movie(data);
 
             using (var db = new MovieContext())
             {
-                db.Movies.Add();
-
-                
+                db.Movies.Add(newMovie);
                 db.Directors.Add(newMovie.Director);
                 db.SaveChanges();
             }
