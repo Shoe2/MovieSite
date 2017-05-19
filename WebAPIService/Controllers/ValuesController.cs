@@ -14,20 +14,21 @@ namespace WebAPIService.Controllers
         // GET all movies to populate app
         public IEnumerable<Movie> Get()
         {            
-            return new List<Movie>
-            {
+            
                 using (var db = new MovieContext())
                 {
-
+                var MoviesList = from m in db.Movies
+                                 select m;
+                return MoviesList;
                 }
-
-            };
+                
+            
         }
 
         // POST added movie to DB
         public void Post([FromBody]string value)
         {
-
+            AddToDB();
         }
 
         
