@@ -6,12 +6,27 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using static MovieSite.GenreDefinitions;
 using System.Runtime.Remoting.Contexts;
+using System.Xml.Serialization;
+using Newtonsoft.Json.Linq;
 
 namespace MovieSite
 {
 
     public class Movie
     {
+        public Movie(string json)
+        {
+            JObject jObject = JObject.Parse(json);
+            JToken jMovie = jObject["Movie"];
+            Title = (string)jMovie["Title"];
+            MainGenre = Enum.Parse(Genre, jMovie["Genre"]);
+            //SubGenre = ;
+            //Director = jUser["players"].ToArray();
+            DateReleased = (DateTime)jMovie["DateReleased"];
+            Length = (int)jMovie["Length"];
+            Description = (string)jMovie["Description"];
+        
+        }
         public string Title { get; set; }
         public Genre MainGenre { get; set; }
         public List<SubGenre> SubGenre { get; set; }
@@ -38,19 +53,13 @@ namespace MovieSite
     class AccessDB
     {
 
-        public static void AddToDB ()
+        public static void AddToDB(string data)
         {
-            Movie newMovie = new Movie();
-            newMovie.Title = "test";
-            newMovie.MainGenre = Genre.Horror;
-            newMovie.SubGenre.Add(SubGenre.ChickFlick);
-            newMovie.DateReleased = DateTime.Now;
-            newMovie.Length = 66;
-            newMovie.Description = "FUUUUUUU";
-                        
+            Movie.Movie(data);
+
             using (var db = new MovieContext())
             {
-                db.Movies.Add(newMovie);
+                db.Movies.Add();
 
                 
                 db.Directors.Add(newMovie.Director);
