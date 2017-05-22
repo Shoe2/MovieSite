@@ -24,10 +24,15 @@ namespace MovieSite
             MainGenre = (Genre) Enum.Parse(typeof(Genre), genreString);
 
             //Subgenre list
-            //foreach jMovie["SubGenre"]
+            SubGenre = new List<SubGenre>
+            {
 
-
-            SubGenre = subgenreList
+            };
+            foreach (string sub in jMovie["SubGenre"])
+            {
+                SubGenre.Add((SubGenre) Enum.Parse(typeof(SubGenre), sub));
+            }
+            
 
             //Director takes multiple lines to turn a string into a database entry 
             //TODO: Account for same director on multiple movies
