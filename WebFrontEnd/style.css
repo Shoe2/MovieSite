@@ -1,2 +1,36 @@
-﻿body {
+﻿header {
+    height: 10vh;
+    background:linear-gradient(0deg, blue, white);
+}
+
+nav {
+    height: 3vh;
+    background-color: #a4a4a4;
+}
+
+main {
+    height: 85vh;
+}
+
+footer {
+    height: 2vh;
+}
+
+.flex-parent {}
+
+.flex-item {}
+
+.button {
+        cursor:pointer;
+}
+
+#addNewMoviePopup {
+    position:absolute;
+    width: 75vw;
+    height: 50vh;
+    background-color: #a4a4a4;
+}
+
+#popup-title-bar {
+    height: 5%;
 }
