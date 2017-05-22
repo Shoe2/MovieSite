@@ -1,0 +1,48 @@
+﻿<div>
+    <form ng-submit="submit()" class="flex-parent">
+        <label>Title</label>
+        <input type="text" id="title"/>
+        <label>Genre</label>
+        <select id="genre">
+            <option>Action</option>
+            <option>Adventure</option>
+            <option>Comedy</option>
+            <option>Crime</option>
+            <option>Drama</option>
+            <option>Epic</option>
+            <option>Horror</option>
+            <option>Musical</option>
+            <option>Science Fiction</option>
+            <option>War</option>
+            <option>Western</option>
+        </select>
+        <label>SubGenres</label>
+        <select multiple id="subgenre">
+            <option>Biopic</option>
+            <option>Chick Flick</option>
+            <option>Courtroom Drama</option>
+            <option>Mystery</option>
+            <option>Disaster</option>
+            <option>Fantasy</option>
+            <option>Noir</option>
+            <option>Guy Films</option>
+            <option>Melodrama</option>
+            <option>Road Film</option>
+            <option>Romance</option>
+            <option>Sports</option>
+            <option>Super Heroes</option>
+            <option>Supernatural</option>
+            <option>Thriller</option>
+            <option>Zombie</option>            
+        </select>
+        <label>Director</label>
+        <input type="text" id="director" />
+        <label>Date Released></label>
+        <input type="date" id="releaseDate" />
+        <label>Length (in Minutes)</label>
+        <input type="number" id="length" />
+        <label>Description</label>
+        <textarea id="description" />
+        <input type="submit" id ="submit" value="Add!" ng-submit="submit()"/>
+    </form>
+</div>
