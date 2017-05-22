@@ -1,4 +1,5 @@
-﻿app.controller('movieAppController', ['$scope', '$http', function ($scope, '$http') {
+﻿var app = angular.module("movieApp", []);
+app.controller('movieAppController', ['$scope', '$http', function ($scope, '$http') {
     $http.get('http://URL.com').
         then(function (response) {
             $scope.movies = response.data;
