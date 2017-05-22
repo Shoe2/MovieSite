@@ -26,11 +26,14 @@ footer {
 
 #addNewMoviePopup {
     position:absolute;
-    width: 75vw;
+    top: 25vh;
+    left: 14vw;
+    width: 74vw;
     height: 50vh;
     background-color: #a4a4a4;
 }
 
 #popup-title-bar {
     height: 5%;
+    border-bottom:solid 1px black;
 }

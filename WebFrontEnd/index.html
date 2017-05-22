@@ -19,10 +19,8 @@
         <div ng-if="addNewMovie">
             <div ng-include src="'addNewMoviePopup.html'"></div>
         </div>
-        <main>
-            <div class="main">
-                <div ng-repeat="movie in movies"></div>
-            </div>
+        <main class="flex-parent">
+            <div class = "flex-item movie-item" ng-repeat="movie in movies"></div>
         </main>
         <footer class="flex-parent"></footer>
     </div>

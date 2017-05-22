@@ -1,12 +1,12 @@
 ﻿<div id="addNewMoviePopup">
     <div id="popup-title-bar">
-        <div style="float:right" ng-click="close()">x</div>
+        <div>Add A Movie</div><div style="float:right" ng-click="close()">x</div>
     </div>
     <form ng-submit="submit()" class="flex-parent">
         <label>Title</label>
-        <input type="text" id="title"/>
+        <input required type="text" id="title"/>
         <label>Genre</label>
-        <select id="genre">
+        <select required id="genre">
             <option>Action</option>
             <option>Adventure</option>
             <option>Comedy</option>
@@ -20,7 +20,7 @@
             <option>Western</option>
         </select>
         <label>SubGenres</label>
-        <select multiple id="subgenre">
+        <select multiple required id="subgenre">
             <option>Biopic</option>
             <option>Chick Flick</option>
             <option>Courtroom Drama</option>
@@ -39,13 +39,13 @@
             <option>Zombie</option>            
         </select>
         <label>Director</label>
-        <input type="text" id="director" />
+        <input required type="text" id="director" />
         <label>Date Released></label>
-        <input type="date" id="releaseDate" />
+        <input required type="date" id="releaseDate" />
         <label>Length (in Minutes)</label>
-        <input type="number" id="length" />
+        <input required type="number" id="length" />
         <label>Description</label>
-        <textarea id="description" />
+        <textarea required id="description"></textarea>
         <input type="submit" id ="submit" value="Add!" ng-submit="submit()"/>
     </form>
 </div>
