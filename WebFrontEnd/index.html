@@ -2,11 +2,28 @@
 <html>
 <head>
     <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="ui-bootstrap-tpls-2.5.0.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="appController.js"></script>
     <link type="text/css" rel="style.css" />
     <meta charset="utf-8" />
     <title>Movie Collection</title>
 </head>
-<body>
+<body ng-app="movieApp">
+    <header></header>
+    <nav class="flex-parent">
+        <div id="new-button" class="flex-item">
+            New
+        </div>
+    </nav>
+    <div ng-include="addNewMoviePopup.html"></div>
+    <main>
+        <div class="main" ng-controller="movieAppController">
+            <div ng-repeat="movie in movies"></div>
+        </div>
+    </main>
+    <footer class="flex-parent">
 
+    </footer>
 </body>
 </html>
