@@ -16,7 +16,11 @@ footer {
     height: 2vh;
 }
 
-.flex-parent {}
+.flex-parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .flex-item {}
 
@@ -25,15 +29,29 @@ footer {
 }
 
 #addNewMoviePopup {
-    position:absolute;
+    position: absolute;
     top: 25vh;
     left: 14vw;
     width: 74vw;
     height: 50vh;
     background-color: #a4a4a4;
+    overflow: hidden;
 }
 
 #popup-title-bar {
     height: 5%;
     border-bottom:solid 1px black;
+}
+
+#submit {
+    align-self:flex-end !important;
+}
+
+textarea {
+    width: 68vw;
+    height: 10vh;
+}
+
+form {
+    margin: 3vw;
 }

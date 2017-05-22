@@ -3,49 +3,63 @@
         <div>Add A Movie</div><div style="float:right" ng-click="close()">x</div>
     </div>
     <form ng-submit="submit()" class="flex-parent">
-        <label>Title</label>
-        <input required type="text" id="title"/>
-        <label>Genre</label>
-        <select required id="genre">
-            <option>Action</option>
-            <option>Adventure</option>
-            <option>Comedy</option>
-            <option>Crime</option>
-            <option>Drama</option>
-            <option>Epic</option>
-            <option>Horror</option>
-            <option>Musical</option>
-            <option>Science Fiction</option>
-            <option>War</option>
-            <option>Western</option>
-        </select>
-        <label>SubGenres</label>
-        <select multiple required id="subgenre">
-            <option>Biopic</option>
-            <option>Chick Flick</option>
-            <option>Courtroom Drama</option>
-            <option>Mystery</option>
-            <option>Disaster</option>
-            <option>Fantasy</option>
-            <option>Noir</option>
-            <option>Guy Films</option>
-            <option>Melodrama</option>
-            <option>Road Film</option>
-            <option>Romance</option>
-            <option>Sports</option>
-            <option>Super Heroes</option>
-            <option>Supernatural</option>
-            <option>Thriller</option>
-            <option>Zombie</option>            
-        </select>
-        <label>Director</label>
-        <input required type="text" id="director" />
-        <label>Date Released></label>
-        <input required type="date" id="releaseDate" />
-        <label>Length (in Minutes)</label>
-        <input required type="number" id="length" />
-        <label>Description</label>
-        <textarea required id="description"></textarea>
-        <input type="submit" id ="submit" value="Add!" ng-submit="submit()"/>
+        <div class="flex-item">
+            <label>Title</label><br/>
+            <input required type="text" id="title" />
+        </div>
+        <div class="flex-item">
+            <label>Genre</label><br />
+            <select required id="genre">
+                <option>Action</option>
+                <option>Adventure</option>
+                <option>Comedy</option>
+                <option>Crime</option>
+                <option>Drama</option>
+                <option>Epic</option>
+                <option>Horror</option>
+                <option>Musical</option>
+                <option>Science Fiction</option>
+                <option>War</option>
+                <option>Western</option>
+            </select>
+        </div>
+        <div class="flex-item">
+            <label>SubGenres</label><br />
+            <select multiple required id="subgenre">
+                <option>Biopic</option>
+                <option>Chick Flick</option>
+                <option>Courtroom Drama</option>
+                <option>Mystery</option>
+                <option>Disaster</option>
+                <option>Fantasy</option>
+                <option>Noir</option>
+                <option>Guy Films</option>
+                <option>Melodrama</option>
+                <option>Road Film</option>
+                <option>Romance</option>
+                <option>Sports</option>
+                <option>Super Heroes</option>
+                <option>Supernatural</option>
+                <option>Thriller</option>
+                <option>Zombie</option>
+            </select>
+        </div>
+        <div class="flex-item">
+            <label>Director</label><br />
+            <input required type="text" id="director" />
+        </div>
+        <div class="flex-item">
+            <label>Date Released></label><br />
+            <input required type="date" id="releaseDate" />
+        </div>
+        <div class="flex-item">
+            <label>Length (in Minutes)</label><br />
+            <input required type="number" id="length" />
+        </div>
+        <div class="flex-item">
+            <label>Description</label><br />
+            <textarea required id="description" rows=""></textarea>
+        </div>
+        <div class="flex-item"><input type="submit" id="submit" value="Add!" ng-submit="submit()" /></div>
     </form>
 </div>
