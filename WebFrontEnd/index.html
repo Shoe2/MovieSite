@@ -12,11 +12,13 @@
 <body ng-app="movieApp">
     <header></header>
     <nav class="flex-parent">
-        <div id="new-button" class="flex-item">
+        <div id="new-button" class="flex-item" ng-click="showAddMoviePopup()">
             New
         </div>
     </nav>
-    <div ng-include="addNewMoviePopup.html"></div>
+    <div ng-if="addNewMovie">
+        <div ng-include="addNewMoviePopup.html"></div>
+    </div>
     <main>
         <div class="main" ng-controller="movieAppController">
             <div ng-repeat="movie in movies"></div>

@@ -9,6 +9,9 @@
         $http.post('http://URL.com', data, config).then(successCallback, errorCallback);
     }
     
-
+    $scope.showAddMoviePopup = function ()
+    {
+        $scope.addNewMovie = true;
+    }
 
 }]);
