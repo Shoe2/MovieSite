@@ -40,7 +40,6 @@ C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bi
 C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bin\Microsoft.ApplicationInsights.dll
 C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bin\MovieSite.dll
 C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bin\Newtonsoft.Json.dll
 C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bin\System.Net.Http.Formatting.dll
 C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bin\System.ServiceModel.DomainServices.EntityFramework.dll
@@ -55,8 +54,6 @@ C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bi
 C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bin\System.Web.WebPages.Razor.dll
 C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bin\WebGrease.dll
 C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bin\System.ServiceModel.DomainServices.Server.dll
-C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bin\MovieSite.pdb
-C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bin\MovieSite.dll.config
 C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bin\EntityFramework.xml
 C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bin\System.ServiceModel.DomainServices.EntityFramework.xml

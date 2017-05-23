@@ -19,12 +19,10 @@ namespace WebAPIService.Migrations
 
         protected override void Seed(WebAPIService.Models.MovieServiceContext context)
         {
-            context.Directors.AddOrUpdate(x => x.Id,
-      new Models.Director() { ID = 1, DirectorFirstName = "Stephen", DirectorLastName = "Speilburg" },
+            context.Directors.AddOrUpdate(x => x.ID,
+                new Models.Director() { ID = 1, DirectorFirstName = "Stephen", DirectorLastName = "Speilburg" });
 
-      );
-
-            context.Movies.AddOrUpdate(x => x.Id,
+            context.Movies.AddOrUpdate(x => x.ID,
                 new Movie()
                 {
                     ID = 1,
