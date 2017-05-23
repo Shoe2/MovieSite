@@ -198,8 +198,10 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Director.cs" />
+    <Compile Include="Models\DirectorDTO.cs" />
     <Compile Include="Models\GenreDefinitions.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\MovieDTO.cs" />
     <Compile Include="Models\MovieServiceContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

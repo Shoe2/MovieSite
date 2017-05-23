@@ -19,10 +19,24 @@ namespace WebAPIService.Controllers
         private MovieServiceContext db = new MovieServiceContext();
 
         // GET: api/Movies
-        public IQueryable<Movie> GetMovies()
+        public IQueryable<MovieDTO> GetMovies()
         {
-            return db.Movies
-                .Include(m => m.Director.Name);
+            var movies = from m in db.Movies
+                         select new MovieDTO()
+                         {
+                             ID = m.ID,
+                             Title = m.Title,
+                             MainGenre = m.MainGenre.ToString(),
+                             Director = m.Director.Name,
+                             DateReleased = m.DateReleased.ToString(),
+                             Length = m.Length,
+                             Description = m.Description,
+                             SubGenre = m.SubGenre.ToString()
+
+                };
+
+
+            return movies;
         }
 
         // POST: api/Movies

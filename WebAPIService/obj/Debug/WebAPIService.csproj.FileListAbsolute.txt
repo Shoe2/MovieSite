@@ -122,3 +122,4 @@ C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bi
 C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bin\Microsoft.AspNet.Scaffolding.12.0.xml
 C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\obj\Debug\WebAPIService.Migrations.Initial.resources
 C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\obj\Debug\WebAPIService.csproj.GenerateResource.Cache
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\obj\Debug\WebAPIService.csprojResolveAssemblyReference.cache
