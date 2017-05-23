@@ -21,55 +21,8 @@ namespace WebAPIService.Controllers
         // GET: api/Movies
         public IQueryable<Movie> GetMovies()
         {
-            return db.Movies;
-        }
-
-        // GET: api/Movies/5
-        [ResponseType(typeof(Movie))]
-        public async Task<IHttpActionResult> GetMovie(int id)
-        {
-            Movie movie = await db.Movies.FindAsync(id);
-            if (movie == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(movie);
-        }
-
-        // PUT: api/Movies/5
-        [ResponseType(typeof(void))]
-        public async Task<IHttpActionResult> PutMovie(int id, Movie movie)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            if (id != movie.ID)
-            {
-                return BadRequest();
-            }
-
-            db.Entry(movie).State = System.Data.Entity.EntityState.Modified;
-
-            try
-            {
-                await db.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!MovieExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return StatusCode(HttpStatusCode.NoContent);
+            return db.Movies
+                .Include(m => m.Director.Name);
         }
 
         // POST: api/Movies
@@ -110,11 +63,6 @@ namespace WebAPIService.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
-        }
-
-        private bool MovieExists(int id)
-        {
-            return db.Movies.Count(e => e.ID == id) > 0;
         }
     }
 }

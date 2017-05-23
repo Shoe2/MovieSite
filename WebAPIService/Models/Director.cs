@@ -9,8 +9,7 @@ namespace WebAPIService.Models
     public class Director
     {
         public int ID { get; set; }
-        public string DirectorFirstName { get; set; }
-        public string DirectorLastName { get; set; }
+        public string Name { get; set; }
       
     }
 }
