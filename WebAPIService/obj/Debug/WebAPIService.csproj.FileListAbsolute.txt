@@ -94,3 +94,4 @@ C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bi
 C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\bin\zh-Hant\System.ServiceModel.DomainServices.Server.resources.dll
 C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\obj\Debug\WebAPIService.dll
 C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\obj\Debug\WebAPIService.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\WebAPIService\obj\Debug\WebAPIService.csprojResolveAssemblyReference.cache

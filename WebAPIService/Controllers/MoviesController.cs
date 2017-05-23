@@ -51,7 +51,7 @@ namespace WebAPIService.Controllers
                 return BadRequest();
             }
 
-            db.Entry(movie).State = EntityState.Modified;
+            db.Entry(movie).State = System.Data.Entity.EntityState.Modified;
 
             try
             {
