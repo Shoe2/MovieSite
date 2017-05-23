@@ -1,0 +1,12 @@
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\obj\Release\MovieSite.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\bin\Release\MovieSite.dll.config
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\bin\Release\MovieSite.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\bin\Release\MovieSite.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\bin\Release\EntityFramework.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\bin\Release\Newtonsoft.Json.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\bin\Release\EntityFramework.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\obj\Release\MovieSite.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\obj\Release\MovieSite.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MovieSite\MovieSite\bin\Release\Newtonsoft.Json.xml

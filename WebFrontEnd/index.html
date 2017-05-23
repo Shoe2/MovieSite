@@ -15,6 +15,9 @@
             <div id="new-button" class="flex-item button" ng-click="showAddMoviePopup()">
                 New
             </div>
+            <div id="new-button" class="flex-item button" ng-click="refreshMovies()">
+                Refresh
+            </div>
         </nav>
         <div ng-if="addNewMovie">
             <div ng-include src="'addNewMoviePopup.html'"></div>
