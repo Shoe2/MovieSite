@@ -18,6 +18,12 @@ namespace WebAPIService
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            var formatters = GlobalConfiguration.Configuration.Formatters;
+            var json = formatters.JsonFormatter;
+
+            formatters.Remove(formatters.XmlFormatter);
+            json.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.All;
         }
     }
 }
