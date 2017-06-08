@@ -10,7 +10,7 @@ app.controller('movieAppController', ['$scope', '$http', function ($scope, $http
     };
     $scope.submit = function () {
         $scope.close();
-        $http.post('api/SaveMovie', data, config).
+        $http.post('/api/SaveMovie', data, config).
             then($scope.refreshMovies(), function (response) {
                 alert(response);
             });

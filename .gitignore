@@ -45,3 +45,7 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+WebAPIService/App_Data/MovieServiceContext-20170522172608_log.ldf
+*.mdf
+*.mdf
+*.ldf

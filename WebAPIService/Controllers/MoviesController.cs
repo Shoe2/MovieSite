@@ -11,6 +11,7 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using MovieSite.Models;
 using WebAPIService.Models;
+using static MovieSite.GenreDefinitions;
 
 namespace WebAPIService.Controllers
 {
@@ -30,10 +31,10 @@ namespace WebAPIService.Controllers
                              Director = m.Director.Name,
                              DateReleased = m.DateReleased.ToString(),
                              Length = m.Length,
-                             Description = m.Description,
-                             SubGenre = m.SubGenre.ToString()
+                             Description = m.Description
+                             //SubGenre = m.SubGenre.Select<SubGenre, string>(x =>nameof(x)).ToList()
 
-                };
+                         };
 
 
             return movies;
