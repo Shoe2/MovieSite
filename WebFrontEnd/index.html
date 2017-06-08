@@ -23,7 +23,14 @@
             <div ng-include src="'addNewMoviePopup.html'"></div>
         </div>
         <main class="flex-parent">
-            <div class = "flex-item movie-item" ng-repeat="movie in movies"></div>
+            <div class = "flex-item movie-item" ng-repeat="movie in movies">
+                <div>{{movie.Title}}</div>
+                <div>{{movie.DateReleased}}</div>
+                <div>{{movie.Director}}</div>
+                <div>{{movie.MainGenre}}</div>
+                <div>{{movie.SubGenre}}</div>
+                <div>{{movie.Description}}</div>
+            </div>
         </main>
         <footer class="flex-parent"></footer>
     </div>

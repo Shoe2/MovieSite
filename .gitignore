@@ -51,3 +51,4 @@ WebAPIService/App_Data/MovieServiceContext-20170522172608_log.ldf
 *.ldf
 WebAPIService/App_Data/MovieServiceContext-20170522172608_log.ldf
 WebAPIService/App_Data/MovieServiceContext-20170522172608.mdf
+*.publishproj

@@ -3,14 +3,16 @@ app.controller('movieAppController', ['$scope', '$http', function ($scope, $http
     $scope.addNewMovie = false;
     //$scope.refreshMovies();
     $scope.refreshMovies = function () {
-        $http.get('/api/movies').
+        $http.get('/movies/api/movies').
             then(function (response) {
-                $scope.movies = response.data;
+                console.log(response.data.$values);
+                $scope.movies = response.data.$values;
             }, function (response) { console.log("ERROR:" + response.ExceptionMessage); });
     };
+
     $scope.submit = function () {
         $scope.close();
-        $http.post('/api/SaveMovie', data, config).
+        $http.post('/movies/api/SaveMovie', data, config).
             then($scope.refreshMovies(), function (response) {
                 alert(response);
             });
