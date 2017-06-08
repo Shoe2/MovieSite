@@ -12,7 +12,7 @@
     <div ng-controller="movieAppController">
         <header></header>
         <nav class="flex-parent">
-            <div id="new-button" class="flex-item button" ng-click="showAddMoviePopup()">
+            <div id="new-button" class="flex-item button" ng-click="showPopup('')">
                 New
             </div>
             <div id="new-button" class="flex-item button" ng-click="refreshMovies()">
@@ -22,9 +22,13 @@
         <div ng-if="addNewMovie">
             <div ng-include src="'addNewMoviePopup.html'"></div>
         </div>
+        <div ng-if="deleteMovie">
+            <div ng-include src="'deleteMoviePopup.html'"></div>
+        </div>
         <main class="flex-parent">
             <div class = "flex-item movie-item" ng-repeat="movie in movies">
                 <div class="movie-title">{{movie.Title}}</div>
+                <div ng-click="showPopup(movie)">X</div>
                 <div>{{movie.DateReleased}}</div>
                 <div>{{movie.Director}}</div>
                 <div>{{movie.MainGenre}}</div>

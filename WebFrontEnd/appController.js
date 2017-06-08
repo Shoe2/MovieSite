@@ -1,14 +1,16 @@
 ﻿var app = angular.module("movieApp", []);
 app.controller('movieAppController', ['$scope', '$http', function ($scope, $http) {
     $scope.addNewMovie = false;
-    //$scope.refreshMovies();
+    $scope.deleteMovie = false;
+    
     $scope.refreshMovies = function () {
         $http.get('/movies/api/movies').
             then(function (response) {
-                console.log(response.data.$values);
                 $scope.movies = response.data.$values;
             }, function (response) { console.log("ERROR:" + response.ExceptionMessage); });
     };
+
+    $scope.refreshMovies();
 
     $scope.submit = function () {
         $scope.close();
@@ -18,12 +20,22 @@ app.controller('movieAppController', ['$scope', '$http', function ($scope, $http
             });
     };
     
-    $scope.showAddMoviePopup = function () {
-        $scope.addNewMovie = true;
+    $scope.showPopup = function (movieID) {
+        if (movieID === '')
+        {
+            $scope.addNewMovie = true;
+        }
+            
+        else
+        {
+            $scope.deleteMovie = true;
+        }
     };
 
     $scope.close = function () {
         $scope.addNewMovie = false;
+        $scope.deleteMovie = false;
+
     };
 
 }]);

@@ -31,20 +31,20 @@ footer {
 
 .movie-item {
     border: 1px solid #000;
-    text-overflow: wrap;
+    overflow: wrap;
     padding: 5px;
+    width: 20vw;
 }
 
 .movie-title {
     font-weight: bold;
     font-size: 1.2rem;
     font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
-    width: 20vw;
     text-overflow: wrap;
 }
 
 /*Styles for the Add Movie Popup*/
-#addNewMoviePopup {
+#addNewMoviePopup, #deleteMoviePopup {
     position: absolute;
     top: 25vh;
     left: 14vw;
