@@ -5,11 +5,11 @@
     <form ng-submit="submit()" class="flex-parent">
         <div class="flex-item">
             <label>Title</label><br/>
-            <input required type="text" id="title" />
+            <input required type="text" id="title" ng-model="newMovie.Title"/>
         </div>
         <div class="flex-item">
             <label>Genre</label><br />
-            <select required id="genre">
+            <select required id="genre" ng-model="newMovie.Genre">
                 <option>Action</option>
                 <option>Adventure</option>
                 <option>Comedy</option>
@@ -25,7 +25,7 @@
         </div>
         <div class="flex-item">
             <label>SubGenres</label><br />
-            <select multiple required id="subgenre">
+            <select multiple required id="subgenre"  ng-model="newMovie.SubGenre">
                 <option>Biopic</option>
                 <option>Chick Flick</option>
                 <option>Courtroom Drama</option>
@@ -46,20 +46,20 @@
         </div>
         <div class="flex-item">
             <label>Director</label><br />
-            <input required type="text" id="director" />
+            <input required type="text" id="director"  ng-model="newMovie.Director"/>
         </div>
         <div class="flex-item">
             <label>Date Released></label><br />
-            <input required type="date" id="releaseDate" />
+            <input required type="date" id="releaseDate"  ng-model="newMovie.DateReleased"/>
         </div>
         <div class="flex-item">
             <label>Length (in Minutes)</label><br />
-            <input required type="number" id="length" />
+            <input required type="number" id="length"  ng-model="newMovie.Length"/>
         </div>
         <div class="flex-item">
             <label>Description</label><br />
-            <textarea required id="description"></textarea>
+            <textarea required id="description"  ng-model="newMovie.Description"></textarea>
         </div>
-        <div class="flex-item"><input type="submit" id="submit" value="Add!" ng-submit="submit()" /></div>
+        <div class="flex-item"><input type="submit" id="submit" value="Add!"/></div>
     </form>
 </div>
